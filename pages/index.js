@@ -1,6 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
+import deved from "../public/AvatarMaker.png";
+import design from '../public/design.png';
+import code from '../public/code.png';
+import consulting from '../public/consulting.png';
+
 
 export default function Home() {
   return (
@@ -13,10 +17,10 @@ export default function Home() {
 
         <main className="px-5">
           <section className="min-h-screen">
-            <nav className="py-10 mb-12 flex justify-between">
-              <h1 className="text-xl bg-gradient-to-r from-cyan-600 text-white rounded-md px-4 py-2 ml-2">DevelopedByNizzo</h1>
+          <nav className="py-10 mb-12 flex justify-between">
+              <h1 className="text-xl bg-gradient-to-b from-cyan-600 text-white rounded-md px-4 py-2 ml-2">DevelopedByNizzo</h1>
               <ul className="flex items-center">
-                <li><a className="bg-gradient-to-l  from-cyan-600 text-white px-4 py-2 rounded-md ml-8 text-xl" href="#">Resume</a></li>
+                <li><a className="bg-gradient-to-b from-cyan-600 text-white px-4 py-2 rounded-md ml-8 text-xl" href="#">Resume</a></li>
               </ul>
             </nav>
             <div className="text-center p-10">
@@ -25,14 +29,27 @@ export default function Home() {
               <h3 className="text-blue-400"> O- Noob</h3>
               <p><em className="text-blue-500 text-md py-5 leading-8">A cool guy learning how to code</em></p>
             </div>
-            <div className="relatives mx-auto bg-gradient-to-b from-cyan-500 rounded-full w-80 h-80 mt-20 ">
+            <div className="relatives mx-auto bg-gradient-to-b from-cyan-500 rounded-full w-80 h70 mt-20 overflow-hidden">
               <Image src={deved}/>
             </div>
           </section>
+
+          <section>
+            <div>
+              <h3 className="text-3xl py-1 font-mono">About Me:</h3>
+              <p className="text-md py-2 leading-8 text-gray-500">
+                      Hi my name is Afonso!! I started codding in 2022 when I entered in <span className="text-cyan-500"><em>"Universidade Do Minho"</em></span>. 
+                      The first language I was taught was haskell, and then was C, Im stil very noob at those languages but i will get better. This summer after university I decided to learn a bit of Web3 and Im still learning.
+                      this has been an interesting journey and Im excited about the future!
+              </p>
+            </div>
+            
+            <div>
+         
+            </div>
+          </section>
+
         </main>
-
-
-    <main></main>
     </div>
 
   );
