@@ -1,6 +1,6 @@
 import Head from "next/head";
-
-import {AiFillTwiterCircle, AiFillLinkedIn, AiFillYoutube} from 'react-icons/ai'
+import Image from "next/image";
+import deved from "../public/dev-ed-wave.png";
 
 export default function Home() {
   return (
@@ -11,22 +11,22 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico"/>
         </Head>
 
-        <main className="bg-white px-10">
+        <main className="px-5">
           <section className="min-h-screen">
             <nav className="py-10 mb-12 flex justify-between">
-              <h1 className="text-xl" font-burtons>developedBynizzo</h1>
+              <h1 className="text-xl bg-gradient-to-r from-cyan-600 text-white rounded-md px-4 py-2 ml-2">DevelopedByNizzo</h1>
               <ul className="flex items-center">
-                <li>?</li>
-                <li><a className="bg-gradient-to-r  from-cyan-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
+                <li><a className="bg-gradient-to-l  from-cyan-600 text-white px-4 py-2 rounded-md ml-8 text-xl" href="#">Resume</a></li>
               </ul>
             </nav>
-            <div>
-              <h2>Afonso Campos</h2>
-              <h3>Developer</h3>
-              <p><em>A cool guy learning how to code</em></p>
+            <div className="text-center p-10">
+              <h2 className="text-5xl py-2 text-cyan-600 font-medium ">Afonso Campos</h2>
+              <h3 className="text-blue-400"> O- Developer</h3>
+              <h3 className="text-blue-400"> O- Noob</h3>
+              <p><em className="text-blue-500 text-md py-5 leading-8">A cool guy learning how to code</em></p>
             </div>
-            <div>
-
+            <div className="relatives mx-auto bg-gradient-to-b from-cyan-500 rounded-full w-80 h-80 mt-20 ">
+              <Image src={deved}/>
             </div>
           </section>
         </main>

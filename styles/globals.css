@@ -22,3 +22,23 @@ body {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
+
+
+h1 {
+  font-style: italic;
+  font-family: monospace;
+}
+
+li {
+  font-style: italic;
+  font-family: monospace;
+}
+
+main {
+  background-color: lightblue;
+}
+
+h2 {
+  font-family: monospace;
+  font-style: italic;
+}
