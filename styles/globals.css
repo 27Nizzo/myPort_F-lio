@@ -35,8 +35,16 @@ li {
 }
 
 main {
-  background-color: lightblue;
+  background-color: rgb(2, 69, 92);
 }
+/* Example CSS for dark mode */
+.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Add more CSS styles for dark mode as needed */
+
 
 h2 {
   font-family: monospace;
